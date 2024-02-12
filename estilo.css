@@ -12,23 +12,23 @@ body {
 header {
   background: linear-gradient(to right, #ffeb3b, #ffa000);
   color: #fff;
-  padding: 20px;
+  padding: 2%; /* Ajuste de padding en porcentaje */
   text-align: center;
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 2.5em; /* Ajuste de tamaño de fuente en em */
   margin: 0;
 }
 
 header nav {
-  margin-top: 10px;
+  margin-top: 1%; /* Ajuste de margen superior en porcentaje */
 }
 
 header nav a {
   color: #fff;
-  font-size: 18px;
-  margin: 0 10px;
+  font-size: 1.5em; /* Ajuste de tamaño de fuente en em */
+  margin: 0 2%; /* Ajuste de margen en porcentaje */
   text-decoration: none;
 }
 
@@ -39,15 +39,15 @@ header nav a:hover {
 section {
   background-color: #5a5050;
   border-radius: 9px;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 2% auto; /* Ajuste de margen en porcentaje */
+  padding: 2%; /* Ajuste de padding en porcentaje */
   text-align: center;
 }
 
 section h2 {
   color: #ffeb3b;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 1.5em; /* Ajuste de tamaño de fuente en em */
+  margin-bottom: 2%; /* Ajuste de margen inferior en porcentaje */
 }
 
 .table-container {
@@ -59,8 +59,8 @@ section h2 {
 }
 
 th, td {
-  border: 3px solid #dc9d00;
-  padding: 8px;
+  border: 0.3em solid #dc9d00; /* Ajuste de grosor de borde en em */
+  padding: 1em; /* Ajuste de padding en em */
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -72,13 +72,13 @@ th, td {
 footer {
   background-color: #ffeb3b;
   color: #000;
-  padding: 10px 0;
+  padding: 1% 0; /* Ajuste de padding en porcentaje */
   text-align: center;
 }
 
 img {
-  width: 200px;
-  height: 130px;
+  width: 12em; /* Ajuste de ancho de imagen en em */
+  height: 8em; /* Ajuste de alto de imagen en em */
   user-select: none;
 }
 
@@ -94,28 +94,27 @@ p {
   content: "";
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 1em; /* Ajuste de ancho en em */
+  height: 1em; /* Ajuste de alto en em */
   background-color: #dc9d00;
-  border: 2px solid #000;
-  border-width: 0 2px 2px 0;
+  border: 0.13em solid #000; /* Ajuste de grosor de borde en em */
+  border-width: 0 0.13em 0.13em 0; /* Ajuste de grosor de borde en em */
   transform: translateY(-50%) rotate(-45deg);
-  right: -10px; /* Ajuste de posición */
+  right: -0.5em; /* Ajuste de posición en em */
 }
 
 .menu-container::before {
   content: "";
   position: absolute;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 1em; /* Ajuste de ancho en em */
+  height: 1em; /* Ajuste de alto en em */
   background-color: #dc9d00;
-  border: 2px solid #000;
-  border-width: 0 2px 2px 0;
+  border: 0.13em solid #000; /* Ajuste de grosor de borde en em */
+  border-width: 0 0.13em 0.13em 0; /* Ajuste de grosor de borde en em */
   transform: translateY(-50%) rotate(135deg);
-  left: -10px; /* Ajuste de posición */
+  left: -0.5em; /* Ajuste de posición en em */
 }
-
 
 .contenido {
   display: flex;
@@ -124,15 +123,9 @@ p {
 .info,
 .mapa {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 2%; /* Ajuste de margen derecho en porcentaje */
 }
 
 .menu {
   width: 95%;
-}
-
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 480px) {
 }
