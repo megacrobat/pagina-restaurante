@@ -3,7 +3,6 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -51,27 +50,23 @@ section h2 {
   margin-bottom: 20px;
 }
 
-.menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.table-container {
+  overflow-x: auto;
 }
 
-table {
-  border-collapse: collapse;
-  margin: 0 auto 20px;
-  width: 400px;
+.tabla-oculta {
+  margin: 0 auto;
 }
 
 th, td {
   border: 3px solid #dc9d00;
   padding: 8px;
   text-align: center;
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-image: url('imagenes/fondo-papel.jpg');
+  user-select: none;
 }
 
 footer {
@@ -81,11 +76,57 @@ footer {
   text-align: center;
 }
 
-img{
+img {
   width: 200px;
   height: 130px;
+  user-select: none;
 }
 
-p{
+p {
   color: #dc9d00;
+}
+
+.menu-container {
+  position: relative;
+}
+
+.menu-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #dc9d00;
+  border: 2px solid #000;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-50%) rotate(-45deg);
+  right: -10px; /* Ajuste de posición */
+}
+
+.menu-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #dc9d00;
+  border: 2px solid #000;
+  border-width: 0 2px 2px 0;
+  transform: translateY(-50%) rotate(135deg);
+  left: -10px; /* Ajuste de posición */
+}
+
+
+.contenido {
+  display: flex;
+}
+
+.info,
+.mapa {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.menu {
+  width: 95%;
 }
